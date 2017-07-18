@@ -1,4 +1,144 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	  "http://www.w3.org/TR/html401">
+<html><head><meta http-equiv="Content-Type" content="text/html;
+						     charset=windows-1252">
+    <title>Ji He</title>
+    <meta name="author" content="Ji He">
+    <meta name="copyright" content="© 2017 Yi Luan">
+    <meta http-equiv="Content-language" content="en">
+    
+    <meta name="description" content="Home page of Yi Luan">
+    <meta name="keywords" content="Yi Luan">
+    <meta name="keywords" lang="es" content="Yi Luan">
+    <meta name="robots" content="all">
+  </head>
 
-This site is under construction. For more information please email
-jvking@uw.edu
+  <body>
+
+    <table border="0" cellspacing="20">
+      <tbody>
+	<tr>
+	    <td align="left"><img width="400" height="400" border=""
+	    src="IMG_8246.l copy.jpg" alt="Ji He"
+	    title="@Ji He"></td>
+	      <td width="40">&nbsp;</td>
+	        <td align="left" nowrap="">
+		      <h2>Ji He</h2>
+
+            Email: jvking [at] uw [dot] edu <br>
+	    <br>
+    Ph. D. <br>
+    Department of Electrical Engineering <br>
+    University of Washington<br>
+
+                <h3>News</h3>
+                <div style="width:100%; height:100px;
+                overflow-y:scroll;"><table width="100%">
+                    <tbody><tr>
+                      <td width="100px"><calent>24-Jul-17</calent></td>
+                      <td><calent> I have graduated and will join <a href="https://www.citadel.com/" >Citadel</a> as a
+                      Quantative Researcher.
+		      </calent></td>
+                      </tr>
+                </tbody></table></div>
+  </td>
+</tr>
+      </tbody>
+    </table>
+
+
+<h3>About Me</h3>
+<p>
+I am a fifth-year Ph.D. student in <a href="http://www.ee.washington.edu/">Department of Electrical
+ Engineering</a> at <a href="https://www.washington.edu/">University of Washington</a>.
+My research mainly focuses on deep reinforcement learning for natural
+ language applications, working
+ with <a href="http://ssli.ee.washington.edu/people/mo/">Prof. Mari
+ Ostendorf</a>
+ and <a href="https://www.microsoft.com/en-us/research/people/xiaohe/">
+ Dr. Xiaodong He</a>. Previously, I got my master degrees
+in Department of Electrical Engineering and Department of Statistics,
+ at University of Washington. I received my bachelor's degree at
+ Tsinghua University. Here are
+ my <a href="https://www.linkedin.com/in/ji-he-aa097235/">linkedin</a>
+ and <a href="https://scholar.google.com/citations?user=2gBeukEAAAAJ&hl=en">Google Scholar</a>.
+<br>
+<h3>Past Experience</h3>
+<p>
+In the past, I've worked on both speech synthesis and speech
+recognition. I have a keen interest in statistics, as well as
+statistical learning. I also read extensively on human-computer dialog systems.
+
+<hr>
+
+
+<script type="text/JavaScript" language="JavaScript">
+//
+// format date as dd-mmm-yy
+// example: 12-Jan-99
+//
+function date_ddmmmyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getYear();
+
+  // handle different year values
+  // returned by IE and NS in
+  // the year 2000.
+  if(y >= 2000)
+  {
+    y -= 2000;
+  }
+  if(y >= 100)
+  {
+    y -= 100;
+  }
+
+  // could use splitString() here
+  // but the following method is
+  // more compatible
+  var mmm =
+    ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
+    ( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
+    ( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
+    (10==m)?'Oct':(11==m)?'Nov':'Dec';
+
+  return "" +
+    (d<10?"0"+d:d) + "-" +
+    mmm + "-" +
+    (y<10?"0"+y:y);
+}
+
+
+//
+// get last modified date of the
+// current document.
+//
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+
+  // check if we have a valid date
+  // before proceeding
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyy(new Date(d1));
+  }
+
+  return s;
+}
+
+//
+// finally display the last modified date
+// as DD-MMM-YY
+//
+document.write("This page was updated on " + date_lastmodified() +
+	 ".");
+
+//
+  
+
+</body></html>
